@@ -1,5 +1,5 @@
 .container {
-    width: 22%;
+    width: 18%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -28,15 +28,20 @@
   
   @media screen and (max-width: 480px) {
     .container {
-      width: 100%;
+      width: 50%;
     }
-  
+
     .title {
-      font-size: 30px;
+      font-size: 20px;
+      text-align: center;
     }
   
-    .price,
+    .price {
+      font-size: 18px;
+    }
+
     .desc {
-      font-size: 24px;
+      font-size: 14px;
     }
   }
+

@@ -1,14 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <Image src="/img/bg.png" objectFit="cover" layout="fill" alt="" />
-      </div>
-      <div className={styles.item}>
         <div className={styles.card}>
+          <Link href="/">
+            <a><Image src="/img/logo.png" alt="" width="300px" height="120px"/></a>
+          </Link>
           <h2 className={styles.motto}>
             OH YES, WE DID.THE PIZZARIA, WELL BAKED SLICE OF PIZZA.
           </h2>

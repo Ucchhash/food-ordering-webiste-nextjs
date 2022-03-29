@@ -39,8 +39,21 @@
       height: auto;
       text-align: center;
     }
-    .item:first-child {
+
+    /* .item:first-child {
       display: none;
+    } */
+
+    .motto {
+      font-size: 18px;
+    }
+
+    .card .title {
+      font-size: 18px;
+    }
+
+    .card .text {
+      font-size: 14px;
     }
   
     .item {
@@ -55,3 +68,11 @@
       font-size: 15px;
     }
   }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+    
+
+}
