@@ -1,5 +1,5 @@
 {
-  "name": "cofee-shop",
+  "name": "pizza-shop",
   "private": true,
   "scripts": {
     "dev": "next dev",
