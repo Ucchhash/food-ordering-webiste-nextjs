@@ -29,7 +29,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <Link href="/">
-                        <a><Image src="/img/logo.png" alt="" width="160px" height="60px"/></a>
+                        <a><Image src="/img/logo.png" alt="" width="220px" height="90px"/></a>
                     </Link>
                     <li className={styles.listItem}>
                         <Link href="/cart">

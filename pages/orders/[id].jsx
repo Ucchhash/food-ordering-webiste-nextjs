@@ -31,7 +31,7 @@ const Order = () => {
                 <span className={styles.address}>Elton st. 212-33 LA</span>
               </td>
               <td>
-                <span className={styles.total}>$79.80</span>
+                <span className={styles.total}>$79.60</span>
               </td>
             </tr>
           </table>
