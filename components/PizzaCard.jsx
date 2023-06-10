@@ -1,24 +1,23 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 import styles from '../styles/PizzaCard.module.css';
 
 const PizzaCard = ({ data }) => {
-  const { id, imgSrc, title, price } = data;
-  const router = useRouter();
+  const { imgSrc, title, price } = data;
+
   return (
-    <div
-      className={styles.container}
-      onClick={() => router.push(`/products/${id}`)}
+    <Link
+      href={`/products/${title.toLowerCase().replace(/\s/g, '-')}`}
+      passHref
     >
-      <Image src={imgSrc} alt="" width="500" height="500" />
-      <a href="">
-        <h1 className={styles.title}>{title}</h1>
-      </a>
-      <span className={styles.price}>${price}</span>
-      <p className={styles.desc}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
-    </div>
+      <div className={styles.container}>
+        <Image src={imgSrc} alt={title} width="500" height="500" />
+        <a href="">
+          <h1 className={styles.title}>{title}</h1>
+        </a>
+        <span className={styles.price}>${price}</span>
+      </div>
+    </Link>
   );
 };
 

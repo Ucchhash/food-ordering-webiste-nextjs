@@ -58,7 +58,11 @@ const PizzaList = ({ data }) => {
       <Hero />
       <div className={styles.wrapper}>
         {pizzaImages.map((pizza, i) => (
-          <PizzaCard data={pizza} key={i} id={pizza.id} />
+          <PizzaCard
+            data={pizza}
+            key={i}
+            pid={pizza.title.toLowerCase().replace(/\s/g, '-')}
+          />
         ))}
       </div>
     </div>

@@ -1,28 +1,34 @@
 .container {
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  font-size: 24px;
+  color: #444;
+  width: 70%;
+  text-align: center;
+}
+
+.desc span {
+  color: #b03a2e;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
   .desc {
-    font-size: 24px;
-    color: #444;
-    width: 70%;
-    text-align: center;
+    font-size: 18px;
+    width: 100%;
   }
 
   .title {
-      font-size : 40px;
-      font-weight: 700;
+    font-size: 24px;
   }
-
-  @media screen and (max-width: 768px) {
-      .desc {
-          font-size: 18px;
-      }
-
-      .title {
-          font-size: 24px;
-      }
-  }
+}

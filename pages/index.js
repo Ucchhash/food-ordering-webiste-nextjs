@@ -1,3 +1,4 @@
+import Loader from 'components/Loader';
 import Head from 'next/head';
 import PizzaList from '../components/PizzaList';
 import styles from '../styles/Home.module.css';

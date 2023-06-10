@@ -1,0 +1,33 @@
+.notification {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50px;
+  z-index: 99999;
+  background: #fdfdfd;
+  left: 50%;
+  padding: 20px;
+  flex-direction: column;
+  transform: translate(-50%, 0);
+  border: 1px solid #b03a2e;
+  border-radius: 10px;
+}
+
+.header {
+  text-align: center;
+  font-size: 24px;
+  color: #b03a2e;
+}
+
+.button {
+  padding: 10px 25px;
+  background-color: #b03a2e;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
