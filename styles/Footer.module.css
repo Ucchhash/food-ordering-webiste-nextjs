@@ -8,6 +8,8 @@
   flex: 1;
   position: relative;
   display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .item:last-child {
