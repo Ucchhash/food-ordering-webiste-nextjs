@@ -46,7 +46,7 @@ const Product = () => {
   }
 
   return (
-    <div>
+    <>
       {isProductAdded && <Notification />}
       <div className={styles.container}>
         <div className={styles.left}>
@@ -129,7 +129,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
